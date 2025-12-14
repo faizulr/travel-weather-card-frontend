@@ -7,6 +7,7 @@ import { WeatherCardSkeleton } from '@/components/WeatherCardSkeleton';
 import { ActionButtons } from '@/components/ActionButtons';
 import { EmptyState } from '@/components/EmptyState';
 import { ErrorState } from '@/components/ErrorState';
+import { ThemeToggle } from '@/components/ThemeToggle';
 import { useWeatherForecast } from '@/hooks/useWeatherForecast';
 import type { Location, Forecast } from '@/types/weather';
 
@@ -48,11 +49,15 @@ const Index = () => {
       {/* Header */}
       <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-40">
         <div className="container max-w-3xl mx-auto px-4 py-4">
-          <div className="flex items-center justify-center gap-3">
-            <div className="p-2 rounded-lg bg-primary/10">
-              <Plane className="h-6 w-6 text-primary" />
+          <div className="flex items-center justify-between">
+            <div className="w-10" />
+            <div className="flex items-center gap-3">
+              <div className="p-2 rounded-lg bg-primary/10">
+                <Plane className="h-6 w-6 text-primary" />
+              </div>
+              <h1 className="text-xl font-bold text-foreground">Travel Weather Card</h1>
             </div>
-            <h1 className="text-xl font-bold text-foreground">Travel Weather Card</h1>
+            <ThemeToggle />
           </div>
         </div>
       </header>
