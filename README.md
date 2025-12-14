@@ -1,4 +1,4 @@
-# ✈️ Travel Weather Card
+# Travel Weather Card Frontend
 
 Plan your perfect travel day with beautiful, shareable weather cards. Get accurate 7-day forecasts for any location worldwide and let AI suggest the best day to visit based on weather conditions.
 
